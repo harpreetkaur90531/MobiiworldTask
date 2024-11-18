@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item name="value16" type="dimen">16dp</item>
+
+    <item name="sp10" type="dimen">10sp</item>
+
+    <item name="sp5" type="dimen">5sp</item>
+    <item name="sp16" type="dimen">16sp</item>
+    <item name="sp18" type="dimen">18sp</item>
+    <item name="sp14" type="dimen">14sp</item>
+    <item name="sp12" type="dimen">12sp</item>
+    <item name="sp30" type="dimen">30sp</item>
+    <item name="sp50" type="dimen">50sp</item>
+    <item name="sp20" type="dimen">20sp</item>
+</resources>
