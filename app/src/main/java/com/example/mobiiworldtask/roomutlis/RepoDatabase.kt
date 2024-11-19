@@ -9,10 +9,7 @@ import com.google.firebase.firestore.auth.User
 @Database(entities = [User::class], version = 1, exportSchema = false)
 abstract class RepoDatabase : RoomDatabase(){
 
-//    Make UserDatabase a SINGLETON class as we want only a SINGLE instance of UserDatabase running
-
-
-//    this function will return the UserDao which we created
+//    this function will return the RepoDao which we created
     abstract fun userDao(): RepoDao
 
     companion object{

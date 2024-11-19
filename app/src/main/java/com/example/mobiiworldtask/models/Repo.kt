@@ -6,13 +6,13 @@ import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "user_table")
+@Entity(tableName = "repo_table")
 data class Repo (
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val firstName: String?,
-    val lastName: String?,
-    val age: Int
+    val name: String?,
+    val stargazers_count: String?,
+    val isBookMark: Int
 ): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
@@ -24,9 +24,9 @@ data class Repo (
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(id)
-        parcel.writeString(firstName)
-        parcel.writeString(lastName)
-        parcel.writeInt(age)
+        parcel.writeString(name)
+        parcel.writeString(stargazers_count)
+        parcel.writeInt(isBookMark)
     }
 
     override fun describeContents(): Int {

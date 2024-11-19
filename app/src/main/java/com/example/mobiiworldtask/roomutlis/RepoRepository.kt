@@ -16,17 +16,17 @@ class RepoRepository (private val userDao: RepoDao){
         userDao.addRepo(user)
     }
 
-    //    a suspend function to update the existing user in DB
+    //    a suspend function to update the existing repo in DB
     suspend fun updateRepo(repo: Repo){
         userDao.updateRepo(repo)
     }
 
-    //    a suspend function to delete a user from DB
+    //    a suspend function to delete a repo from DB
     suspend fun deleteRepo(repo: Repo){
         userDao.deleteRepo(repo)
     }
 
-    //    a suspend function to delete all user from DB
+    //    a suspend function to delete all repo from DB
     suspend fun deleteAllRepo(){
         userDao.deleteAllRepo()
     }
